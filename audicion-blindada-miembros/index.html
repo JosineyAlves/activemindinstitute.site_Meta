@@ -110,7 +110,7 @@
     }
     .section-nav a {
       text-decoration: none;
-      font-size: 0.82rem;
+      font-size: 1rem;
       font-weight: 600;
       color: var(--gray-700);
       padding: 6px 14px;
@@ -161,7 +161,7 @@
     }
     .section-heading {
       font-family: 'Poppins', sans-serif;
-      font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+      font-size: clamp(1.2rem, 2.5vw, 1.45rem);
       font-weight: 700;
       color: var(--navy-mid);
       display: flex;
@@ -403,6 +403,59 @@
     }
     .faq-answer.open { max-height: 800px; padding: 18px 20px; }
 
+    /* ─── REFUND SECTION ────────────────────────────────── */
+    .refund-section {
+      background: var(--gray-100);
+      border-top: 1px solid var(--gray-200);
+      padding: 28px 20px;
+    }
+    .refund-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .refund-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .refund-text {
+      flex: 1;
+      min-width: 200px;
+    }
+    .refund-text h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy-mid);
+      margin-bottom: 4px;
+    }
+    .refund-text p {
+      font-size: 0.87rem;
+      color: var(--gray-500);
+    }
+    .btn-refund {
+      background: var(--white);
+      color: var(--blue-link);
+      border: 1px solid var(--gray-200);
+      white-space: nowrap;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-refund:hover {
+      background: var(--gray-200);
+      border-color: var(--gray-500);
+    }
+
     /* ─── FOOTER ─────────────────────────────────────────── */
     .site-footer {
       background: var(--navy-mid);
@@ -439,7 +492,7 @@
       .steps-grid              { grid-template-columns: 1fr; }
       .step-card               { text-align: left; }
       .step-card .step-num     { margin: 0 0 12px 0; }
-      .section-nav a           { font-size: 0.75rem; padding: 5px 10px; }
+      .section-nav a           { font-size: 1rem; padding: 5px 10px; }
     }
     @media (min-width: 641px) and (max-width: 900px) {
       .cards-grid { grid-template-columns: repeat(2, 1fr); }
@@ -681,6 +734,21 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ REEMBOLSO -->
+<section class="refund-section">
+  <div class="refund-inner">
+    <span class="refund-icon">🔒</span>
+    <div class="refund-text">
+      <h3>¿Cómo solicitar el reembolso de mi compra?</h3>
+      <p>Si necesitas solicitar un reembolso, puedes hacerlo directamente a través del soporte oficial de Hotmart.</p>
+    </div>
+    <a class="btn btn-refund" href="https://help.hotmart.com/es/article/360061973392/-como-solicitar-el-reembolso-de-mi-compra-" target="_blank" rel="noopener">
+      <svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146z"/></svg>
+      Ver instrucciones
+    </a>
   </div>
 </section>
 
